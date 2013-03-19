@@ -16,8 +16,9 @@ db = shelve.open(path.join(app.root_path, app.config['SHELVE_DB']),
     protocol=HIGHEST_PROTOCOL, writeback=True)
 
 def populate_db():
-    skills = db['skills'] = dict()
-    skills['programming'] = Skill('programming', 'The act of writing computer programs')
+    skills = dict()
+    skills['programming'] = 
+        Skill('programming', 'The act of writing computer programs')
     skills['C#'] = Skill('C#', 'A general purpose strongly typed class-based \
         object-oriented programming language with characteristics of C++ and Java \
         and support for namespacing, delegates, and generics')
